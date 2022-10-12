@@ -67,14 +67,13 @@ public class DSAlgoStepDefinition {
 		loginPF = new LoginPagePF(driver);
 		loginPF.enterUsername();
 		loginPF.enterPassword();
-		
-		loginPF = new LoginPagePF(driver);
-		loginPF.loginBtnClicked();
-		}
+	}
 		
 	@And("user click on sign in button")
 	public void user_click_on_sign_in_button() {
-		System.out.println("inside user click on sign in button");		
+		System.out.println("inside user click on sign in button");
+		
+		loginPF.loginBtnClicked();
 		
 	}
 
@@ -82,7 +81,6 @@ public class DSAlgoStepDefinition {
 	public void user_in_th_home_page() {
 		System.out.println("inside user in th home page");
 		
-		homePF = new HomePagePF(driver);
 	    homePF.signoutBtnDisplayed();
 	    
 	}
