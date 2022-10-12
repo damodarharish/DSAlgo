@@ -56,7 +56,7 @@ public class DSAlgoStepDefinition {
 	    Thread.sleep(2000);
 		 
 	    homePF = new HomePagePF(driver);
-	    homePF.clickonsigninbtn();
+	    homePF.clickOnSigninBtn();
 	    Thread.sleep(2000);
 	}
 
@@ -83,7 +83,8 @@ public class DSAlgoStepDefinition {
 		System.out.println("inside user in th home page");
 		
 		homePF = new HomePagePF(driver);
-	    homePF.signoutbtnclicked();
+	    homePF.signoutBtnDisplayed();
+	    
 	}
 	
 	
