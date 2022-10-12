@@ -10,10 +10,10 @@ public class HomePagePF {
 	WebDriver driver;
 	
 	@FindBy(xpath = "//a[contains(text(),'Sign in')] ")
-	WebElement Click_signinbtn;
+	WebElement btn_signin;
 	
 	@FindBy(xpath = "//a[contains(text(),'Sign out')]")
-	WebElement Click_sigouttbtn;
+	WebElement btn_sigoutt;
 	
 	
 	public HomePagePF(WebDriver driver) {
@@ -21,9 +21,9 @@ public class HomePagePF {
 		PageFactory.initElements(driver, this);
 	}
 	public void clickonsigninbtn() {
-		Click_signinbtn.click();
+		btn_signin.click();
 	}
 	public void signoutbtnclicked() {
-		Click_sigouttbtn.click();
+		btn_sigoutt.click();
 	}
 }
