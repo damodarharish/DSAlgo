@@ -20,10 +20,10 @@ public class HomePagePF {
 		this.driver= driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickonsigninbtn() {
+	public void clickOnSigninBtn() {
 		btn_signin.click();
 	}
-	public void signoutbtnclicked() {
-		btn_sigoutt.click();
+	public void signoutBtnDisplayed() {
+		btn_sigoutt.isDisplayed();
 	}
 }
